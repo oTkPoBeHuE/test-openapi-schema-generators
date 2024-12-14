@@ -18,6 +18,12 @@ As of December 14, 2024, the `Orval` library appears to be more robust and well-
 1. [openapi-codegen](https://github.com/fabien0102/openapi-codegen) — The author of this library also developed a [tool for generating Zod schemas](https://github.com/fabien0102/ts-to-zod))
 2. [openapi-generator](https://github.com/OpenAPITools/openapi-generator?tab=readme-ov-file) и [openapi-generator-cli](https://github.com/openapitools/openapi-generator-cli) — Low-level tools. It’s unclear if they natively support`TanStack Query` из коробки. из коробки. **Requires `Java` installation**.
 
+#### Commands
+- `download-schema` — an example command to download a remote file into the project folder s`rc/api/schema/downloads`.
+- `clean` — deletes all generated files in the `__generated__` folders.
+- `openapi-ts:generate` — runs code generation using OpenAPI TS and saves the result in `src/api/hey-api_openapi-ts/*/__generated__`.
+- `orval:generate` — runs code generation using Orval and saves the result in `src/api/hey-api_openapi-ts/*/__generated__`.
+- 
 ## Where to Download Schemas
 You can find and download `OpenAPI` schemas on the website [apis.guru](https://apis.guru/).
 
@@ -58,11 +64,7 @@ You can find and download `OpenAPI` schemas on the website [apis.guru](https://a
 1. [openapi-codegen](https://github.com/fabien0102/openapi-codegen) — Автор этой библиотеки также создал [инструмент для генерации zod генерирует](https://github.com/fabien0102/ts-to-zod))
 2. [openapi-generator](https://github.com/OpenAPITools/openapi-generator?tab=readme-ov-file) и [openapi-generator-cli](https://github.com/openapitools/openapi-generator-cli) — Это низкоуровневые инструменты. Неясно, поддерживают ли они `TanStack Query` из коробки. из коробки. **Для работы требуется установленная `Java`**.
 
-``` bash
-npm install @hey-api/client-fetch && npm install @hey-api/openapi-ts -D
-```
-
-
+#### Commands
 - `download-schema` - Пример, как загрузить удалённый файл в проект:  `src/api/schema/downloads`
 - `clean` - Удаляет все сгенерированные файлы в папках `__generated__`
 - `openapi-ts:generate` - Генерация с помощью `openapi-ts` в папки `src/api/hey-api_openapi-ts/*/__generated__`
