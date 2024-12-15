@@ -15,6 +15,8 @@ export default defineConfig({
                 useExamples: true
             },
             indexFiles: false,
+            httpClient: 'fetch',
+            baseUrl: "https://petstore3.swagger.io/api/v3"
         },
     },
     petstore_zod: {
@@ -26,6 +28,8 @@ export default defineConfig({
             mode: 'tags-split',
             client: 'zod',
             fileExtension: '.zod.ts',
+            httpClient: 'fetch',
+            baseUrl: "https://petstore3.swagger.io/api/v3"
         },
     },
     akeneo_reactQuery: {
@@ -42,6 +46,7 @@ export default defineConfig({
                 useExamples: true
             },
             indexFiles: false,
+            httpClient: 'fetch'
         },
     },
     akeneo_zod: {
